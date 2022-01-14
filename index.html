@@ -13,8 +13,8 @@
     <script src="/Tech Bridge Fall Class Assignments/JS Login Form/script.js"></script>
 </head>
 
-    
-    
+
+
 <body>
     <!--Tile-->
     <div class="tile">
@@ -30,39 +30,22 @@
         </div>
 
         <div class="tile-body">
-            <form id="form">
-                <label class="form-input">
-                    <i class="material-icons">person</i>
-                    <input type="text" autofocus="true" required />
-                    <span class="label">Username</span>
-                    <span class="underline"></span>
-                </label>
 
-                <label class="form-input">
-                    <i class="material-icons">lock</i>
-                    <input type="password" required />
-                    <span class="label">Password</span>
-                    <div class="underline"></div>
-                </label>
+            <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
+            <input type="password" class="form-control" name="password" placeholder="Password" required="" />
 
-                <div class="submit-container clearfix" style="margin-top: 2rem;">
-                    <div id="submit" role="button" type="button" class="btn btn-irenic float-right" tabindex="0">
-                        <span>SIGN IN</span>
-                    </div>
-
-                    <div class="login-pending">
-                        <div class=spinner>
-                            <span class="dot1"></span>
-                            <span class="dot2"></span>
-                        </div>
-
-                        <div class="login-granted-content">
-                            <i class="material-icons">diamond</i>
-                        </div>
-                    </div>
+            <div class="submit-container clearfix" style="margin-top: 2rem;">
+                <div id="submit" role="button" type="button" class="btn btn-irenic float-center" tabindex="0">
+                    <span>SIGN IN</span>
                 </div>
-            </form>
+
+                <div class="login-granted-content">
+                    <i class="material-icons">diamond</i>
+                </div>
+            </div>
         </div>
+        </form>
+    </div>
     </div>
 
     <script src="" async defer></script>
