@@ -11,10 +11,6 @@
   base: #454749;
 }
 
-@function color($key: "calm") {
-  @return map-get($colors, $key);
-}
-
 * {
   box-sizing: border-box;
 }
