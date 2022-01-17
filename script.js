@@ -1,12 +1,12 @@
 let passwordPairs = {
-  sarahford: "password",
-  sford85: "password2",
+  UserName: "Admin",
+  Password: "password",
 };
 
-function check(form) {
+function submitButton() {
   if (passwordPairs[form.userid.value] === form.pswrd.value) {
     window.open("target.html");
     alert("success");
-    return false;
+    return true;
   }
 }

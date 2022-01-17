@@ -7,47 +7,34 @@
     <title>Login Form</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--CSS Link-->
-    link(
-    <link rel="stylesheet" href="/JS Login Form/style.css">)
 
-    <!--JavaScript Link-->
-    <script src="/JS Login Form/script.js"></script>
+    <!--CSS Link-->
+    <link rel="stylesheet" href="style.css">
 
 <body>
     <!--Tile-->
-    <div class=" tile">
-        <div class="article">
-            <h2 style="color: rgb(65, 1, 102); 
-                opacity: .75; 
-                font-size: 4rem; 
-                display: flex; 
-                justify-content: center; 
-                align-items: center; 
-                height: 100%;">
-                SIGN IN</h2>
-        </div>
 
-        <div class="tile-body">
-
-            <input type="text" class="form-control" name="username" placeholder="Username" required="" autofocus="" />
-            <input type="password" class="form-control" name="password" placeholder="Password" required="" />
-
-            <div class="submit-container clearfix" style="margin-top: 2rem;">
-                <div id="submit" role="button" type="button" class="btn btn-irenic float-center" tabindex="0">
-                    <span>SIGN IN</span>
-                </div>
-
-                <div class="login-granted-content">
-                    <div class="material-icons">diamond</i>
+    <form action="https://www.youtube.com/watch?v=g3dl32LaOls" method="POST" class="form login">
+        <section class="container">
+            <div id="overlay" class="overlay">
+                <h2>SIGN IN</h2>
+                <div class="tile-body">
+                    <input type="text" id="username" class="form-control" name="username" placeholder="Username"
+                        required="" autofocus="" />
+                    <input type="password" id="password" class="form-control" name="password" placeholder="Password"
+                        required="" autofocus="" />
+                    <div>
+                        <button type="button" id="submit-button" class="btn btn-outline-secondary"
+                            onclick="submitButton()">SIGN IN</button>
                     </div>
                 </div>
             </div>
-            </form>
-        </div>
-    </div>
+        </section>
 
-    <script src="" async defer></script>
+
+        <!--JavaScript Link-->
+        <script src="script.js"></script>
+
 </body>
 
 </html>

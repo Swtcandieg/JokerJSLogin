@@ -1,94 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
-.colors {
-  irenic: #07beb8;
-  serene: #3dccc7;
-  tranquil: #68d8d6;
-  calm: #9ceaef;
-  cool: #c4fff9;
-  ice: #ffffff;
-  base: #454749;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 14px;
-}
-
 body {
-  background-image: url("https://t3.ftcdn.net/jpg/03/85/85/32/240_F_385853222_tYeGDvfPC6RoOFYiPK56cE64ixPTFypy.jpg");
+  background: url("https://img.wallpapersafari.com/desktop/1680/1050/70/43/IElKFW.jpg")
+    no-repeat center center fixed;
   background-size: 150px;
   height: 600px;
   width: 1000px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Source Sans Pro", sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   min-height: 100vh;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Monoton, sans-serif;
-  margin-bottom: 0.5rem;
-}
-
 /*Tiles*/
+.container {
+  position: relative;
+  top: 20%;
+  left: 20%;
+}
 
-.tile {
-  background-color: white;
-  border-radius: 0.1rem;
-  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.2),
-    0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-  position: center;
-  width: 100%;
-  min-width: 320px;
-  max-width: 24rem;
+#overlay {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 220px;
+  height: 160px;
+  position: relative;
 }
-.article {
-  background-image: url("https://coolthemestores.com/wp-content/uploads/2021/06/joker-wallpaper-background.jpg");
-  background-size: 150px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 350px;
-  height: 200px;
-}
-.tile-body {
-  padding: 2rem;
+
+h2 {
+  text-align: center;
+  color: rgb(16, 5, 80);
+  font-size: 36px;
 }
 
 /*Forms*/
-.form-signin {
-  max-width: 380px;
-  padding: 15px 35px 45px;
-  margin: 0 auto;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+
+.form-control {
+  font-size: 15px;
+  padding: 5px;
+  text-align: center;
 }
 
-.form-control:focus {
-  position: relative;
-  font-size: 16px;
-  height: auto;
-  padding: 10px;
-}
-
-input[type="text"] {
-  margin-bottom: -1px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-input[type="password"] {
-  margin-bottom: 20px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+.tile-body {
+  justify-content: center;
+  position: absolute;
+  top: 20%;
+  left: 5%;
 }
